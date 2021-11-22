@@ -8,7 +8,7 @@ const server = http.Server(app);
 
 app.use(express.static("public"));
 
-const onSocketConnect = require("./libs/socket3");
+const onSocketConnect = require("./libs/socket");
 const wss = new WebSocket.WebSocketServer({ server });
 
 app.get("/", (req, res) => {
