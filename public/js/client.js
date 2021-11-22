@@ -17,7 +17,7 @@ const { username, room } = Qs.parse(location.search, {
 // console.log(location);
 
 // Let us open a web socket
-var ws = new WebSocket(`ws://${location.host}`);
+var ws = new WebSocket(`wss://${location.host}`);
 
 ws.onopen = function () {
   // Web Socket is connected, send data using send()
